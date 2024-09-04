@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1sheesh</title>
+    <!-- fontawesome -->
+     <link rel="stylesheet" href="css/all.css">
+    <!-- CSS WEB -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1/dist/kute,min.js"></script>
+</head>
+<body>
+    <!-- nav bar -->
+<header>
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#Home" class="text-gray">F1sheesh</a>
+            </div>
+            
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-links">
+                        <a href="#Home" class="active">Home</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#Fishes">Fishes</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#Feedback">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+
+                <div class="toggle-collapse">
+                    <div class="toggle-icons">
+                        <i class="fa-solid fa-bars fa-rotate-180"></i>
+                </div>
+
+        </div>
+    </nav>
+</header>
+    <!-- nav bar -->
+<!--MAIN SITE -->
+<main>
+    <!--Site title-->
+    <section id="Home" class="site-title">
+        <div class="site-background">
+            <h3>Fish & Sheesh</h3>
+            <h1>Discover Your Unique Fish</h1>
+            <button class="btn">Explore</button>
+        </div>
+    </section>
+
+    <section id="Fishes" class="section-fish">
+        <div class="fish-background"></div>
+        <div class="fish-container">
+            <h2 class="fish-title">Fish Gallery</h2>
+                    <div class="fish-photo-container">
+                        <img src="./assets/Vibrant Mandarinfish.jpg" alt="" class="imgs" id="one">
+                        <img src="./assets/Vibrant Underwater Marine Life.jpg" alt="" class="imgs" id="two">
+                        <img src="./assets/Serene Elegance_ The Goldfish.jpg" alt="" class="imgs" id="three">
+                        <img src="./assets/main1.jpg" alt="" class="imgs" id="four">
+                        <img src="./assets/Serene Blue Fish in Underwater Habitat.jpg" alt="" class="imgs" id="five">
+                        <img src="./assets/main.jpg" alt="" class="imgs" id="six">
+                        <img src="./assets/Illuminated School of Fish.jpg" alt="" class="imgs" id="seven">
+                        <img src="./assets/Intimate Portrait of a Clownfish.jpg" alt="" class="imgs" id="eight">
+                        <img src="./assets/Serene Underwater Goldfish.jpg" alt="" class="imgs" id="nine">
+                    </div>
+        </div>
+    </section>
+    
+    <section id="Feedback" class="section-feedback">
+        
+        <div class="contact-container">
+            <form  class="contact-box"
+                name="Feedback" action="https://api.web3forms.com/submit" method="POST"
+            >
+                <div class="left"></div>
+                <div class="right">
+                    <h2>Feedback</h2>
+                    <input type="hidden" name="access_key" value="e0ee4fd9-a6d9-4f27-afc1-f8753c807580">
+                    <input type="text" name="Name" class="field" placeholder="Your Name">
+                    <input type="text" name="Email" class="field" placeholder="Your Email">
+                    <textarea name="Feedback" placeholder="How is your experience with the website..." class="field"></textarea>
+                    <button type="submit" class="btn2">Send</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <!--Site title-->
+
+</main>
+
+<!--MAIN SITE -->
+    <script src="./js/Jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

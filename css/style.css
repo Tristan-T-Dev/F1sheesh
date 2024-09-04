@@ -1,0 +1,384 @@
+@import url('../css/fonts.css');
+
+html, body{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    height: 100vh;
+	width: 100%;
+}
+
+:root{
+    --text-color: #2f5452;
+}
+/*--global class--*/
+
+a {
+    text-decoration: none;
+    color: var(--text-color)
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+
+.fas.fa-bars {
+    font-size: 24px; /* Adjust as needed */
+}
+
+h3{
+    font-family: Abel;
+    font-size: 1.8rem;
+    z-index:1;
+}
+
+h1{
+    font-family: Lexend;
+    font-size: 3.5rem;
+    z-index: 1;
+}
+button.btn{
+    border: none;
+    -o-border-radius:  2rem;
+    -webkit-border-radius:  2rem;
+    -moz-border-radius:  2rem;
+    -ms-border-radius:  2rem;
+    border-radius:  2rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+/*--glabal class--*/
+
+/*--nav bar--*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.nav{
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    -o-transition:height 1s ease-in-out;
+    -webkit-transition:height 1s ease-in-out;
+    -moz-transition:height 1s ease-in-out;
+    -ms-transition:height 1s ease-in-out;
+    transition:height 1s ease-in-out;
+}
+
+.nav .nav-brand a {
+    font-size: 1.6rem;
+    padding: 1.6rem 0;
+    display: block;
+    font-family: Bungee;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;  
+}
+
+.toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 85%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;   
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.collapse{
+    height: 20rem;
+}
+
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+    font-family: Archivo;
+}
+
+.nav .nav-items .nav-links{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.nav .nav-items .nav-links a:hover,
+.nav .nav-items .nav-links a.active{
+    color: #ef9618;
+}
+.nav .social{
+    padding: 1.4rem;
+}
+
+/*--nav bar--*/
+
+
+/* Main contents*/
+
+/*site title*/
+
+
+main .site-title{
+    background: url('../assets/main2.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+main .site-title .site-background{
+    padding-top: 15rem;
+    text-align: center;
+    color: whitesmoke;
+}
+
+main .site-title h1, h3{
+    margin: .3rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background-color: #e19e5a;
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+}
+/*site title*/
+
+section{
+    min-height: 100vh;
+    display: flex;
+}
+
+.section-fish{
+    display:flex;
+    background-color: #000a12;
+}
+
+
+.section-feedback{
+    display: flex;
+    background-color: #000a12;
+}
+
+.fish-container{
+    max-height: 85%;
+    padding: 5rem;
+
+}
+
+.fish-container .fish-title{
+    font-size: 2.5rem;
+    color: whitesmoke;
+    font-family: Lexend;
+    text-align: center;
+    margin-bottom: 5rem;
+    padding: 1rem;
+}
+
+.fish-container .fish-photo-container{
+    columns: 4 25rem;
+    gap: 1.5 rem;
+}
+
+.fish-container .fish-photo-container img{
+    margin-bottom: 1rem;
+    -o-border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.imgs{
+    transition:
+        scale 0.15s ease-in,
+        opacity 0.15s ease-in,
+        filter 0.15s ease-in;
+    &:hover {
+        scale: 1.1;
+    }
+}
+
+.fish-photo-container:has(.imgs:hover) .imgs:not(:hover){
+    scale: 0.9;
+    opacity: 0.9;
+    filter: blur(4px);
+}
+
+.contact-container{
+    margin-top: 10rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.contact-container .contact-box{
+    border-radius: 1rem;
+}
+.contact-container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("img/bg.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("../assets/contact-1.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+    font-family: Lexend;
+    color: #2f5452;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #ef9618;
+}
+
+.field{
+	width: 80%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn2{
+    width: 90%;
+    padding: 0.5rem 1rem;
+    background-color: #ef9618;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: .5rem;
+}
+
+.btn2:hover{
+    background-color: #2f5452;
+}
+
+.field:focus{
+    border: 2px solid #2f5452;
+    background-color: #fff;
+}
+
+
+
+/* Main contents*/
+
+
+/*--responsive--*/
+
+@media only screen and (max-width:768px) {
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column ;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column ;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 426px){
+	.contact-container{
+		grid-template-columns: 1fr;
+        padding: 2rem;
+	}
+	.left{
+		height: 200px;
+	}
+}
+/*--responsive--*/

@@ -1,0 +1,45 @@
+/*font*/
+@font-face {
+    font-family: Bungee;
+    src: url('../fonts/Bungee/Bungee-Regular.ttf');
+}
+
+@font-face {
+    font-family: Bungee-HairLine;
+    src: url('../Bungee,Bungee_Hairline/Bungee_Hairline/BungeeHairline-Regular.ttf');
+}
+
+@font-face {
+    font-family: Archivo;
+    src: url('../Archivo_Black,Eczar,Lusitana/Archivo_Black/ArchivoBlack-Regular.ttf');
+}
+
+@font-face {
+    font-family: Eczar;
+    src: url('../Archivo_Black,Eczar,Lusitana/Eczar/Eczar-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Lusitana;
+    src: url('../Archivo_Black,Eczar,Lusitana/Lusitana/Lusitana-Regular.ttf');
+}
+
+@font-face {
+    font-family: Lusitana-Bold;
+    src: url('../Archivo_Black,Eczar,Lusitana/Lusitana/Lusitana-Bold.ttf');
+}
+
+@font-face {
+    font-family: Lexend;
+    src: url('../fonts/Lexend/Lexend-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Abel;
+    src: url('../fonts/Abel/Abel-Regular.ttf');
+}
+
+@font-face {
+    font-family: Instrument-Sans;
+    src: url('../fonts/Instrument_Sans/InstrumentSans-VariableFont_wdth\,wght.ttf');
+}
